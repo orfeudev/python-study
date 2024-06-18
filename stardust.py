@@ -44,3 +44,10 @@ monta_build('Black Cleaver', 1975, 1983)
 
 #função posicional respeita a ordem dos parâmetros
 
+#função *args
+
+def concatena(*args):
+    return "Todos os argumentos são: "+", ".join(args)
+
+print(concatena("um", "dois" , "três" , "quatro" , "cinco", "seis"))
+
