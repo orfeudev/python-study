@@ -47,9 +47,32 @@ mob = {
     'rune_position': '2 HP%' '4 CD%' '6 HP%'
 }
 
+#acessando os valores
+
 print(mob['monster'])
 print(mob['type'])
 print(mob['awakened'])
 print(mob['runes'])
 print(mob['rune_position'])
+
+#adcionando um novo par chave-valor
+
+mob['use'] = 'Arena and GVG GOD'
+
+#modificando um valor existente
+
+mob['runes'] = 'Vampire + Energy'
+
+print(mob)
+
+#deletando valores
+
+#del mob['use']  'para não afetar nada que esta acima'
+
+print(mob)
+
+
+
+
+
 
