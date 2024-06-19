@@ -28,7 +28,7 @@ print('A lista final de compras é: ', lista)
 #coleção ordenada e imutável de elementos
 #é definida por ()
 #não pode ser alterada, não pode adicionar nem remover elementos.
-#Use tuplas quando precisar de uma coleção ordenada de itens que não deve ser alterada.
+#use tuplas quando precisar de uma coleção ordenada de itens que não deve ser alterada.
 
 coordenadas = (33.3123, -12.1234)
 print("Coordenadas: ", coordenadas)
@@ -37,6 +37,19 @@ print("Coordenadas: ", coordenadas)
 
 #coleção não ordenada de pares chave-valor
 #sintaxe {}
-#Quando usar: Use dicionários quando precisar de uma coleção de pares chave-valor, onde cada chave deve ser única.
+#quando usar: Use dicionários quando precisar de uma coleção de pares chave-valor, onde cada chave deve ser única.
+#neste exemplo irei utilizar um monstro e runas do jogo mobile Summoners War
+mob = {
+    'monster': 'Chimera',
+    'type': 'Fire',
+    'awakened': 'Rakan',
+    'runes':'Vampire'+' + '+'Destroy',
+    'rune_position': '2 HP%' '4 CD%' '6 HP%'
+}
 
+print(mob['monster'])
+print(mob['type'])
+print(mob['awakened'])
+print(mob['runes'])
+print(mob['rune_position'])
 
