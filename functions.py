@@ -1,12 +1,12 @@
 
-#funções py
+# funções py
 
 def funcao():
     print("bloco de codigo")
 
 funcao()
 
-#parametros
+# parametros
 
 def saudacao():
     print("Hello World!")
@@ -22,13 +22,13 @@ def resultado():
 
 resultado()
 
-#F-string
+# F-string
 def nome(nome):
     print(f"Nome: {nome}")
 
 nome("Joaozinho")
 
-#valores Default
+# valores Default
 def flor(flor='rosa', cor='vermelha'):
     print(f"A cor da {flor} é {cor}")
 
@@ -42,9 +42,9 @@ def monta_build(first_item='', sec_item=0, last_item=0):
 
 monta_build('Black Cleaver', 1975, 1983)
 
-#função posicional respeita a ordem dos parâmetros
+# função posicional respeita a ordem dos parâmetros
 
-#função *args
+# função *args
 
 def concatena(*args):
     return "Todos os argumentos são: "+", ".join(args)
