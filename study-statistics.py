@@ -1,4 +1,3 @@
-# Importing the statistics library
 import statistics
 
 # Built-in Python functions
