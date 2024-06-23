@@ -28,28 +28,33 @@ print(sum([2, 6, 7, 10, 15]))
 # The closer to 0 the standard deviation is, the more homogeneous the data.
 # variance(): Variance is a measure of dispersion that checks the distance between values from the arithmetic mean.
 
-# Data
+# DATA
 
 heights = [1.50, 1.60, 1.70, 1.80, 1.90, 2.00, 2.10, 2.20, 2.30, 2.40]
 print(heights)
 
+# Mean
 mean = statistics.mean(heights)
 print(f'Mean = {mean}')
 
+# Median
 median = statistics.median(heights)
 print(f'Median = {median}')
 
-# For mode, as all values are unique, it may raise an exception.
-# I'll add exception handling to deal with this.
-try:
+# Check for duplicates values to calculate mode
+# When converting something to a set, all duplicate values are removed.
+
+if len(set(heights)) == len(heights):
+    print('All values are unique, there is no mode.')
+else:
     mode = statistics.mode(heights)
     print(f'Mode = {mode}')
-except statistics.StatisticsError:
-    print('All values are unique, there is no mode.')
 
+# Standard Deviation
 standard_deviation = statistics.stdev(heights)
 print(f'Standard deviation = {standard_deviation}')
 
+# Variance
 variance = statistics.variance(heights)
 print(f'Variance = {variance}')
 
